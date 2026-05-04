@@ -9,11 +9,23 @@
     
 </head>
 <body>
+    <div id="login-page" style="display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column; background:pink;">
+  <h2>Enter Password 💕</h2>
+  <input type="password" id="pwd" placeholder="Enter password" style="padding:10px; margin:10px; border-radius:10px;">
+  <button onclick="checkPassword()" style="padding:10px 20px; background:#ff69b4; color:white; border:none; border-radius:10px;">Enter 💖</button>
+</div>
     <div class="cursor"></div>
     <div class="container">
         <h1>Happy Birthday Anike💗</h1>
         <div class="greeting"></div>
         <button class="cta-button">Click to Enter Our World 💕</button>
+        function checkPassword() {
+  if(document.getElementById('pwd').value === 'anike2026') {
+    document.getElementById('login-page').style.display = 'none';
+  } else {
+    alert('Wrong password! Try again 💕');
+  }
+}
     </div>
 
     <script src="script.js">
