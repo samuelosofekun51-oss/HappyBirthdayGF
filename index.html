@@ -15,10 +15,11 @@
   <button onclick="checkPassword()" style="padding:10px 20px; background:#ff69b4; color:white; border:none; border-radius:10px;">Enter 💖</button>
 </div>
     <div class="cursor"></div>
-    <div class="container">
+    <div class="container" id="main-content" style="display:none">
         <h1>Happy Birthday Anike💗</h1>
         <div class="greeting"></div>
         <button class="cta-button">Click to Enter Our World 💕</button>
+        <script>
         function checkPassword() {
   if(document.getElementById('pwd').value === 'anike2026') {
     document.getElementById('login-page').style.display = 'none';
@@ -26,6 +27,7 @@
     alert('Wrong password! Try again 💕');
   }
 }
+        </script>
     </div>
 
     <script src="script.js">
